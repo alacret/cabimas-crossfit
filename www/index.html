@@ -24,20 +24,17 @@
     <script src="js/services.js"></script>
   </head>
   <body ng-app="crossfit">
-<ion-tabs class="tabs-positive tabs-icon-only">
-
-  <ion-tab title="Home" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline" href="#/tab/wod">
-    <!-- Tab 1 content -->
-  </ion-tab>
-
-  <ion-tab title="About" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline">
-    <!-- Tab 2 content -->
-  </ion-tab>
-
-  <ion-tab title="Settings" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline">
-    <!-- Tab 3 content -->
-  </ion-tab>
-
-</ion-tabs>
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-stable">      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-vieww>
   </body>
 </html>
